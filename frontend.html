@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>BookStore</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="bookClass.js"></script>
+        <link rel="stylesheet" type="text/css" href="siteStyle.css">
+    </head>
+    <body class="bg">
+    <center><font face="verdana"><h2><font color=#990000>Book Insertion</font></h2>
+        Title   <input type="text" id="nameTextBox">    
+        Author  <input type="text" id="authorTextBox">    
+        price   <input type="number" id="priceBox" min="0">   
+        genre   <select id ="genreSelection">
+            <option value="Science fiction">Science fiction</option>
+            <option value="Satire">Satire</option>
+            <option value="Drama">Drama</option>
+            <option value="Action and Adventure">Action and Adventure</option>
+            <option value="Romance">Romance</option>
+            <option value="Mystery">Mystery</option>
+            <option value="Horror">Horror</option>
+        </select>
+        <input type="button" id="InsertButton" value="Insert Book">
+
+        <div id="informArea" >
+        </div>
+        </font>
+    </center>
+    <script src="insertBook.js"></script>
+    <center>
+        <font face="verdana">
+        <h2><font color=#990000>Book Search</font></h2>
+        Keyword <input type="text" id="bookKeyWord"> 
+        <input type="button" value="search" id="searchButton">
+		<input type="button" value="clear" id="clearButton">
+        <div id="resultArea"></div>
+        </font>	
+    </center>
+    <script src="getBooksCall.js"></script>
+</body>
+</html>
